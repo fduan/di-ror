@@ -2,8 +2,9 @@ source 'https://rubygems.org'
 gem 'rails', '~> 3.2.8'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  # gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+
 end
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0", :group => :production
@@ -16,4 +17,4 @@ gem "launchy", ">= 2.1.2", :group => :test
 gem "capybara", ">= 1.1.2", :group => :test
 gem "factory_girl_rails", ">= 4.1.0", :group => [:development, :test]
 gem "bootstrap-sass"
-gem "font-awesome-sass-rails"
+gem "font-awesome-rails"

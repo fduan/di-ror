@@ -1,20 +1,51 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : @app_name.try(:underscore).try(:titleize) %></title>
-  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : @app_name.try(:underscore).try(:titleize) %>">
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-      <%= render 'layouts/messages' %>
-      <%= yield %>
-    </main>
-</body>
+    <head>
+      <meta charset="utf-8">
+      <title><%= content_for?(:title) ? yield(:title) : 'nWayData | build intelligent applications and tools making sense of the data' %></title>
+      <meta name="description" content="<%= content_for?(:description) ? yield(:description) : 'big data, real-time processing, data intelligence, hadoop, cassandra, mongodb, web application, mobile application, cloud application' %>">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+      <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic", :media => "all" %>
+
+      <!--[if IE 7]>
+        <%= stylesheet_link_tag 'font-awesome-ie7.min.css' %>
+      <![endif]-->
+
+      <%= javascript_include_tag 'modernizr' %>
+
+      <%= csrf_meta_tags %>
+
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="apple-touch-fa-57x57-precomposed.png">
+      <link rel="shortcut icon" href="favicon.png">
+    </head>
+
+    <body>
+      <header>
+        <%= render 'layouts/navigation' %>
+      </header>
+
+      <main role="main">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </main>
+
+      <footer>
+        <%= render 'layouts/footer' %>
+      </footer>
+
+      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+      <a href="#" id="toTop" style="display: none;">
+        <span id="toTopHover" style="opacity: 0;"></span>
+      </a>
+    </body>
 </html>

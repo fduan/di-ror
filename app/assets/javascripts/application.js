@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require jquery.flexslider-min
+//= require jquery.ui.totop.min
+//= require easing
 //= require_tree .
+
+$(document).ready(function() {
+  $().UItoTop({ easingType: 'easeOutQuart' });
+});
