@@ -214,6 +214,11 @@ section.features {
       font-size: 16px;
       font-weight: 600;
     }
+
+    figure i {
+      font-size: 90px;
+      color: $main-blue;
+    }
   }
 }
 
@@ -277,6 +282,7 @@ footer {
 }
 
 .footer_wrapper {
+  background-color: #404040;
   padding: 55px 0;
 
   .footer {
@@ -296,7 +302,7 @@ footer {
 }
 
 .copyright {
-  background-color: #404040;
+  background-color: $main-blue;
   padding: 15px 0;
 }
 
