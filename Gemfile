@@ -17,3 +17,6 @@ gem "capybara", ">= 1.1.2", :group => :test
 gem "factory_girl_rails", ">= 4.1.0", :group => [:development, :test]
 gem "bootstrap-sass"
 gem "font-awesome-rails"
+
+# heroku
+gem 'rails_12factor', group: :production
