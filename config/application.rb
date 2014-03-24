@@ -75,6 +75,5 @@ module DiRor
     config.assets.version = '1.0'
 
     config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
-
   end
 end
