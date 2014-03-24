@@ -4,7 +4,6 @@
 
 /* header */
 header {
-  border-bottom: solid 1px #cccccc;
   .container {
     position: relative
   }
@@ -174,11 +173,11 @@ header {
   }
 
   #slide1 {
-    background-image: image-url("1.jpg");
+    background-image: image-url("1.png");
   }
 
   #slide2 {
-    background-image: image-url("2.jpg");
+    background-image: image-url("2.png");
   }
 }
 
@@ -282,7 +281,7 @@ footer {
 }
 
 .footer_wrapper {
-  background-color: #404040;
+  @include gradient-vertical(#404040, #6e6e6e, 0%, 100%);
   padding: 55px 0;
 
   .footer {
@@ -292,7 +291,7 @@ footer {
       line-height: 18px;
       padding: 0 0 16px 0;
       margin: 10px 0 20px 0;
-      border-bottom: solid 1px #555555;
+      border-bottom: dotted 1px #d8d8d8;
     }
 
     p {

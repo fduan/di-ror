@@ -8,7 +8,7 @@ group :assets do
 end
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0", :group => :production
-gem "mysql2", ">= 0.3.11"
+#gem "mysql2", ">= 0.3.11"
 gem "rspec-rails", ">= 2.11.4", :group => [:development, :test]
 gem "email_spec", ">= 1.2.1", :group => :test
 gem "cucumber-rails", ">= 1.3.0", :group => :test, :require => false
