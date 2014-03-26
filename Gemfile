@@ -20,3 +20,4 @@ gem "font-awesome-rails"
 
 # heroku
 gem 'rails_12factor', group: :production
+gem 'newrelic_rpm', group: :production
