@@ -31,11 +31,9 @@ group :test do
   gem "minitest-rails"
   gem "minitest-reporters"
   gem "mocha", :require => false
-  gem "shoulda", :require => false
-  gem "cucumber-rails" 
+  gem "minitest-rails-capybara" 
   gem "database_cleaner"
   gem "launchy", ">= 2.1.2"
-  gem "capybara", ">= 2.1.2"
   gem "factory_girl_rails", ">= 4.1.0"
   gem "email_spec"
 end
