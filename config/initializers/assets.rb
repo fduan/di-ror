@@ -9,3 +9,4 @@ DiRor::Application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( font-awesome-ie7.min.css modernizr.js flexslider-icon.eot flexslider-icon.svg flexslider-icon.ttf flexslider-icon.woff ui.totop.png)
