@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 5.0.0'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier', '>= 1.3.0'
@@ -12,6 +12,8 @@ gem 'jquery-turbolinks'
 gem 'jbuilder'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Use Redis adapter to run Action Cable in production
+# gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -21,6 +23,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "puma"
 gem "bootstrap-sass"
 gem "font-awesome-rails"
+
+gem 'pg'
 
 group :development, :test do 
   gem 'byebug'

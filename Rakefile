@@ -6,6 +6,12 @@ require File.expand_path('../config/application', __FILE__)
 
 DiRor::Application.load_tasks
 
-Rails::TestTask.new("test:features" => "test:prepare") do |t|
-  t.pattern = "test/features/**/*_test.rb"
+namespace :test do
+  desc "Run only the tests in the `test/features` directory"
+  task :features  => "test:prepare" do
+    $: << "test"
+    Rails::TestRunner.run(["test/features"])
+  end
 end
+
+
